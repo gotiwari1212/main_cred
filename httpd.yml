@@ -1,7 +1,8 @@
 - hosts: 3.144.31.6 
-  tasks:
   vars:
     my_var: raghav
+  tasks:
+  
   - name: printing  variable value
     debug:
       msg: "{{ my_var }}"
