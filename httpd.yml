@@ -1,5 +1,10 @@
 - hosts: 3.144.31.6 
   tasks:
+  vars:
+    my_var: raghav
+  - name: printing  variable value
+    debug:
+      msg: "{{ my_var }}"
   - name: Install httpd
     yum:
       name: httpd
